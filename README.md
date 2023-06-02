@@ -1,21 +1,67 @@
-Congrats! 🎉
+# Real-time Voice Transcription App
 
-If you made it here then you have passed our initial screening. Welcome to second round of your interview.
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/your-username/real-time-voice-transcription-app/main/app.py)
 
-During this round, we will evaluate your ability to handle new and intricate learning challenges. Choose one of the following assignments. But don't spend no more than 12 hours working on it. After 12 hours, please submit your progress, regardless of the extent of completion. Feel free to generate code using AI tools and chat apps like chatgpt, bing chat, code copilots, codium etc.
+This is a real-time voice transcription app built using Streamlit. The app allows users to transcribe their speech in real-time by clicking a microphone button and speaking.
 
-To access the assignment details, kindly visit the ***#second-round*** channel . If you have any questions ask in the ***#interview-doubts*** channel.
+## Problem Statement
 
-Discord link -<https://discord.gg/uTYkFDS8>
+The objective of this project is to develop a web application that provides real-time speech transcription functionality. Users can simply click a button to start the transcription and see their speech automatically transcribed as they speak.
 
-To create a pull request for a public git repo, you need to follow these steps:
+## Installation
 
--   Fork the repo that you want to contribute to. This will create a copy of the repo under your own GitHub account. You can fork a repo by clicking the **Fork** button on the top right corner of the repo page.
--   Clone your forked repo to your local machine. You can do this by running **`git clone <https://github.com/your-username/repo-name.git`**> in your terminal, where **`your-username`** is your GitHub username and **`repo-name`** is the name of the repo you forked.
--   Create a new branch for your changes. You can do this by running **`git checkout -b branch-name`**, where **`branch-name`** is a descriptive name for your branch.
--   Make your changes in the new branch. You can use any code editor or IDE that you prefer. You can also use GitHub Desktop to manage your changes.
--   Add and commit your changes to the new branch. You can do this by running **`git add .`** to stage all your changes and **`git commit -m "message"`** to commit them with a message, where **`message`** is a brief summary of what you did.
--   Push your changes to your forked repo on GitHub. You can do this by running **`git push origin branch-name`**, where **`branch-name`** is the name of your branch.
--   Create a pull request from your forked repo to the original repo. You can do this by going to your forked repo on GitHub and clicking the **Compare & pull request** button. This will open a page where you can review your changes and add a title and a description for your pull request. You can also link your pull request to an issue if there is one related to your changes. Then click **Create pull request** to submit it.
+To run the app locally, you need to have Python and the required dependencies installed. Follow these steps:
 
-That's it! You have created a pull request for a public git repo. Now you need to wait for the maintainers of the original repo to review and merge your pull request. They might also ask you for some feedback or changes before merging it. You can communicate with them through the comments section of your pull request.
+1. Clone this repository:
+```
+git clone https://github.com/PradeepRaoK/test.git`
+```
+
+
+2. Navigate to the project directory:
+```
+cd test
+```
+
+
+3. Install the dependencies:
+```
+pip install streamlit
+pip install SpeechRecognition
+pip install PyAudio
+```
+
+4. Run the Streamlit app:
+```
+streamlit run app.py
+```
+
+
+5. Access the app in your browser at `http://localhost:8501`.
+
+## Usage
+
+Once the app is running, follow these steps to transcribe your speech in real-time:
+
+1. Click the "Start Transcription" button.
+
+2. Speak into your microphone, and your speech will be transcribed and displayed in real-time.
+
+3. To stop the transcription, press `Ctrl+C` in the terminal or command prompt.
+
+## Dependencies
+
+The following libraries are used in this project:
+
+- Streamlit
+- SpeechRecognition
+- PyAudio
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Acknowledgments
+
+- The Streamlit community for providing a user-friendly framework for building web apps.
+- The SpeechRecognition library for speech-to-text functionality.
